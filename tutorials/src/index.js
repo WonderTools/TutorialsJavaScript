@@ -1,28 +1,15 @@
-//Creating a Set
-let aSet = new Set();
+let myArray = [1, 2, 3, 4, 5, 4, 3, 2];
 
-//Adding different things inside the set
-aSet.add(75);
-aSet.add("Hello World");
-aSet.add({"name" : "MyName"});
+console.log("creating a set from array");
+let mySet = new Set(myArray);
+console.log(mySet);
 
-//logging the set
-console.log(aSet);
+console.log("for every element on a set");
+for(let x of mySet.values()){
+    console.log(x);
+}
 
-console.log("Checking if the set has 75 :"+aSet.has(75))
-
-console.log("Checking if the set has 76 :"+aSet.has(76))
-
-console.log("Checking if the set has object :"+aSet.has({"name" : "MyName"}))
-
-aSet.delete(75);
-
-console.log("Checking if the set has 75 (after deleting) :"+aSet.has(75))
-
-//Adding the same element twice to a set will be ignored
-aSet.add("Hello World");
-
-console.log(aSet);
-
-
-
+console.log("for every element on a array");
+for(let x of myArray){
+    console.log(x);
+}
