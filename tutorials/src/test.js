@@ -1,6 +1,6 @@
 class test {
 	log(){
-		console.log("logging from test");
+		console.log("logging from test.");
 	}
 }
 
